@@ -1,0 +1,136 @@
+/*------------------------reset清除默认样式----------------------- */
+html{color:#000;background:#fff;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+body{font:12px/1 '微软雅黑',Tahoma,Helvetica,Arial,"\5b8b\4f53",'宋体',sans-serif;}
+img{border:none;}
+em,strong{font-style:normal;font-weight:normal;}
+li{list-style:none;}
+table {border-collapse:collapse;border-spacing:0;}
+h1{font-size:18px;}
+h2{font-size:16px;}
+h3{font-size:14px;}
+h4, h5, h6{font-size:100%;}
+
+q:before,q:after{content:'';}/* 消除q前后的内容 */
+button,input,select,textarea{font-size:100%;}/* 使得表单元素在 ie 下能继承字体大小 */
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+address,cite,dfn,em,var{font-style:normal;} /* 将斜体扶正 */
+
+/* link */
+a{color:#666;text-decoration:none;}
+a:hover{color:#36c;text-decoration:none;}
+.clearfix {
+    display: inline-block;
+    zoom: 1;
+}
+
+/* @media screen and (min-width:1200px){ */
+.appoint{width: 100%;height:260px;background:#fff;margin-top: 40px;}
+.app_list{overflow:hidden;clear:both;}
+.appointCon{width:1200px;height: 250px;margin:0 auto;}
+.app_list li{float:left;width:238px;padding-top:10px;text-align: center;border-left: 1px solid #e1e1e1;}
+.app_list li:last-child{border-right: 1px solid #e1e1e1;}
+.app_list>li img{transition: all 1s;}
+.app_list>li:hover img{transform:translate(-5px,-10px);box-shadow: 1px 5px 15px rgba(0,0,0,0.1);}
+.app_list li p{line-height: 30px;margin-top: 10px;}
+.app_list li p b{font-size: 18px;}
+.app_list li p span{font-size: 12px;color:#666;}
+.btn_yy{margin-top: 30px;width:190px; height:48px;font-size: 16px;} 
+
+/*------------------header---------------------------------*/
+.topNav{width:100%;height:30px;background:#f5f5f5;}
+.topNav_con{width:1200px;height:30px;line-height: 30px;margin:0 auto;}
+.topNav_right{position: relative;width: 250px;float:right;}
+.topNav_right a{padding-left: 30px;font:12px/30px '微软雅黑';}
+.mainBav{width:100%;height:80px;background:#fff;position:relative;z-index: 100;box-shadow: 1px 3px 10px #ccc;}
+.navCon{width: 1200px;height: 80px;margin:0 auto;}
+.logo{float:left;margin:23px 0 0 0;padding-right: 116px;}
+.mainNav{float:left;padding-top: 35px;}
+.mainNav>li{float:left;padding:10px 30px;position:relative;}
+.mainNav>li:last-child{padding-right: 0;}
+.mainNav>li>a{font-size: 20px;}
+.mainNav>li>ol{display:none;position:absolute;left:11px;top:35px;background:#fff;padding:10px 30px;width:120px;}
+.mainNav>li>ol>li>a{font-size:14px;line-height: 30px;}
+.nav1{position:fixed;top:0;left:0;}
+/*----------------appointment-------Pages-----------------*/
+.appointment{width: 100%;height:80px;background:#f7f7f7;}
+.appoint_list li>span{font-size: 30px;line-height: 80px;padding-left: 15px;}
+.appoint_list li>span,.appoint_list li>p{float:left;}
+.appoint_list li>p{font-size: 18px;line-height: 22px;padding:0 10px 0 10px;margin-top:19px;border-right: 1px solid #efefef;}
+.appoint_list li>p>span{font-size: 12px;}
+.btn_tc{line-height:80px;}
+/*-----------------con---pages-------------------------*/
+.core,.works,.sovle,.case{padding-top:30px;margin-top:50px;width: 100%;line-height: 35px;}
+.core{background:url(../img/advantagesBg.jpg) no-repeat center 0;}
+.core>h2,.works>h2,.sovle>h2,.case>h2{font-size:36px; font-weight: bold;margin-bottom:10px;text-align: center;}
+.core>p,.works>p,.sovle>p,.case>p{font-size: 20px;text-align: center;padding-bottom:10px;}
+.works{padding-bottom: 50px;}
+.works>p{padding-bottom: 30px;}
+.imgs-hx{position:relative;}
+.coreList{width:50%;height:100%;position:absolute;right:0;top:0;}
+.coreList li{float:left;width:33.3%;height:50%; line-height: 45px;padding-top: 8%; background:rgba(0,0,0,0.2);border: 1px solid rgba(255,255,255,0.3);color:#fff;font-size: 24px;text-align: center;cursor: pointer;}
+.coreList li span{height:75px;display:block;}
+.coreList li p{margin-top: 5px;}
+/*----------------sovle-------Pages-----------------*/
+.sovle{background:#f9f9f9;padding-bottom: 30px;}
+.sovleNav{width:980px;margin:0 auto;clear: both;overflow:hidden;}
+.sovleNav li{float:left;margin:0 18px;padding:0 10px;font-size: 18px;cursor:pointer;}
+.sovleNav .current{background:#ccc;}
+.soveListcon{width:980px;margin:0 auto;clear: both;overflow:hidden;margin-top: 30px;}
+.soveListcon .soveListconL li{ margin-top: 15px;cursor:pointer;}
+.soveListcon .soveListconL{margin-right: 30px;margin-left: 15px;}
+.soveListcon>*{float:left;}
+/*--------------------case-----pages------------------*/
+.case{margin-top:0;padding-bottom: 50px;}
+.caseCon{width:1200px;margin:0 auto;clear: both;overflow:hidden;}
+.caseCon ul li{float:left;width:300px;height:200px;background:#f9f9f9;border: 1px solid rgba(0,0,0,0.1);box-sizing: border-box;overflow:hidden;}
+.caseCon ul li p{text-align: center;font-size: 18px; line-height: 50px;margin-top: 50px;}
+
+/*----------------banner-------Pages-----------------*/
+.banner{width:100%;height:100%;}
+.bannerImg{position:relative;width:100%;height:100%;overflow: hidden;}
+.imgB1{position:absolute;left:0;top:0px;width:100%;height:540px;background:url('http://www.3vjia.com/Content/images/index_images/banner1.jpg') no-repeat;    background-size: 100% auto;
+}
+.carousel-control.lre{width: 35px;height: 35px; line-height: 30px;font-size: 24px; margin-top: 15%;border: 1px solid #666;border-radius: 50%;}
+
+
+/*---------works展示-----------------*/
+#focus_Box{position:relative;width:710px;height:308px;margin:20px auto;}
+#focus_Box ul{position:relative;width:710px;height:308px;}
+#focus_Box li{z-index:0;position:absolute; width:0px;background:#787878;height:0px;top:146px;cursor:pointer;left:377px;border-radius:4px;box-shadow:1px 1px 12px rgba(200, 200, 200, 1);}
+#focus_Box li img{width:100%;background:url(../img/loading.gif) no-repeat center 50%;height:100%;vertical-align:top;}
+#focus_Box li p{position:absolute;left:0;bottom:0px;width:100%;height:40px;line-height:40px;background:url(../img/float-bg.png) repeat;text-indent:8px;color:#fff;}
+#focus_Box li p span{display:inline-block;width:70%;height:40px;overflow:hidden;}
+#focus_Box .prev,#focus_Box .next{display:block;z-index:100;overflow:hidden;cursor:pointer;position:absolute;width:52px;height:52px;top:131px;}
+#focus_Box .prev{background:url(../img/btn.png) left bottom no-repeat;left:0px;}
+#focus_Box .next{background:url(../img/btn.png) right bottom no-repeat;right:0px;} 
+#focus_Box .prev:hover{background-position:left top;}
+#focus_Box .next:hover{background-position:right top;}
+#focus_Box a.imgs-scroll-btn{display:block;position:absolute;z-index:110;top:7px;right:15px;width:51px;height:23px;overflow:hidden;background:url(../img/share-btn.png) no-repeat;text-indent:-999px;}
+
+/*-------------footer----pages-----------------*/
+.footer{width:100%;height: 300px;background:#202731;}
+.footer-main{padding-top: 50px;padding-bottom: 18px;}
+.footer-main dl.addr{width:350px;}
+.footer-main dl:first-child{margin-left: 0;}
+.footer-main dl{float:left;width:200px;color:#fff;margin-left: 80px;font-size: 16px;}
+.footer-main dl dt{padding-bottom: 30px;}
+.footer-main dl dd{line-height: 30px;}
+.footer-main .shortDl{width:90px;}
+.footer-main dl dd a{color:#fff;font-size: 14px;}
+.footbot{width:100%;height: 120px;background:#f1f1f1;padding-top:20px;}
+.footbot p{font-size: 14px;padding:5px 0;}
+
+/*----------------fixfoot----------------------------*/
+.fixfoot{position:fixed;width:100%;height:80px;left:0px;bottom:0px;background:rgba(255,255,255,0.95);box-shadow:1px -2px 5px #e0e0e0;z-index: 11;}
+.fixfootCon{width:1200px;margin:0 auto;}
+.JMtitle{float:left;margin-top: 10px;margin-left: 5px;}
+.formJM{float:left;margin-top: 30px;}
+.formJM .form-group{float:left;margin-left: 30px;}
+.formJM span{position:absolute;right:18%; top:10px;width:30px;height:30px;border: 1px solid #000;border-radius: 50%;text-align: center; line-height: 30px;cursor:pointer;}
+
+/*----------------------fixcenter---------------------*/
+.fixcenter{position:fixed;width:80px;height:309px;background:rgba(255,255,255,0.3);right:0;top:50%;margin-top: -216px;}
+.fixcenter ul li{width: 80px;height: 78px;background:url('../img/zxfix.png') no-repeat;cursor:pointer;}
+.fixcenter ul li a{width:100%;height:100%;display:block;}
+/* } */

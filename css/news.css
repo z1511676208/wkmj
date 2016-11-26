@@ -1,0 +1,16 @@
+.newsCon{padding-top: 30px;padding-bottom: 50px;}
+.newsTop h2{font-size: 30px;line-height: 50px;padding-bottom: 10px;}
+.newsTop ul{clear:both;overflow:hidden;padding-bottom: 30px;width:380px;margin:0 auto;}
+.newsTop ul li{float:left;padding:10px 20px;}
+.newsTop ul li.current{background:#f5f5f5;}
+.newsTop ul li:first-child,.newsTop ul li:nth-of-type(2){border-right: 1px solid #ccc;}
+.newsTop ul li a{font-size: 20px;}
+.newsBot ul li{margin-bottom: 30px;transition: all 1s;}
+.newsBot ul li:hover{box-shadow: 1px 10px 5px #ddd;transform:translate(1px,-10px);}
+.newsBot ul li div{background:#f5f5f5;padding:5px;}
+.newsBot ul li h3{line-height: 35px;font-size: 18px;}
+.newsBot ul li p{line-height: 20px;font-size: 12px;padding-bottom: 15px;}
+.newsBot ul li p:nth-of-type(2){color:#999;height:35px;}
+.newsBot ul li p span{height:20px;}
+.shareLink{height:20px;padding-left: 150px;background:url("../img/shareweibo.png") no-repeat right top;}
+.shareLink a{width:20px;height:20px;display:inline-block;}

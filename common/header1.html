@@ -1,0 +1,99 @@
+﻿<div class="topNav">
+    <div class="topNav_con">
+        <div class="topNav_right">
+            <a href="javascript:;">定制百科</a>
+            <a href="javascript:;">企业招聘</a>
+            <a href="javascript:;">联系我们</a>
+        </div>
+    </div>
+    <div class="mainBav">
+        <div class="navCon">
+            <h1 class="logo">
+                 <a href="index.html" title="返回首页"><img src="img/logo.png" width="160" alt="薇客美居"></a> 
+            </h1>
+            <ul class="mainNav">
+                <li><a href="index.html">首页</a></li>
+                <li>
+                    <a href="proList.html">产品中心</a>
+                    <ol>
+                        <li><a href="javascript:;">全屋定制</a></li>
+                        <li><a href="javascript:;">整体橱柜</a></li>
+                        <li><a href="javascript:;">五金</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="investment.html">招商加盟</a>
+                    <ol>
+                        <li><a href="javascript:;">加盟优势</a></li>
+                        <li><a href="javascript:;">加盟要求</a></li>
+                        <li><a href="javascript:;">加盟支持</a></li>
+                        <li><a href="javascript:;">加盟流程</a></li>
+                        <li><a href="javascript:;">加盟风采</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="javascript:;">服务中心</a>
+                    <ol>
+                        <li><a href="javascript:;">销售网点</a></li>
+                        <li><a href="javascript:;">服务体系</a></li>
+                        <li><a href="javascript:;">订单查询</a></li>
+                        <li><a href="javascript:;">常见问题</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="newsList.html">新闻中心</a>
+                    <ol>
+                        <li><a href="javascript:;">行业动态</a></li>
+                        <li><a href="javascript:;">公司新闻</a></li>
+                    </ol>
+                </li>
+                <li><a href="userCase.html">客户案例</a></li>
+                <li>
+                    <a href="aboutUs.html">关于我们</a>
+                    <ol>
+                        <li><a href="javascript:;">企业介绍</a></li>
+                        <li><a href="javascript:;">企业文化</a></li>
+                        <li><a href="javascript:;">品牌理念</a></li>
+                        <li><a href="javascript:;">联系我们</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+     $(document).ready(function(){
+    // 定时器设置
+    var timer=null;
+    $(".mainNav>li a").mouseover(function(event) {
+         $(this).parent().find("ol").show();
+    });
+    $(".mainNav>li").hover(function() {
+        $(this).find('ol').show();
+    }, function() {
+        var _this=this;
+        timer=setTimeout(function(){
+            $(_this).find('ol').hide();                        
+        }, 200);
+        
+    });
+    $(".mainNav li ol").hover(function() {
+        clearTimeout(timer);
+    }, function() {
+        $(".mainNav>li ol").hide();
+    });
+    // 导航滚动改变状态
+    (function(){
+        var num=$('.mainBav').offset().top;
+        $(window).scroll(function(e) {  
+            var top=$(window).scrollTop();
+            if(top>num-5){
+                $(".mainBav").addClass('nav1');
+            }else{
+                $(".mainBav").removeClass('nav1');
+            }
+        });
+    })();
+    
+});
+</script>

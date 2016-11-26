@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+        <meta name="keywords" content="薇客美居,橱柜,整体橱柜,五金,全屋定制,web设计">
+        <meta name="description" content="薇客美居-实力的橱柜公司,专业的橱柜设计,完美的追求">
+        <title>薇客美居-实力公司</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />   
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/proShow.css" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/proShow.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </head>
+    <body>
+    <!-- 网站头部标题信息 -->
+        <section class="header"></section>
+        <!-- banner图轮播 -->
+        <section class="banner">
+            <div id="myCarousel" class="carousel slide">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>   
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="http://www.3vjia.com/Content/images/index_images/banner1.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="http://www.3vjia.com/Content/images/index_images/banner2.jpg" alt="Second slide">
+                    </div>
+                    <div class="item">
+                        <img src="http://www.3vjia.com/Content/images/index_images/banner3.jpg" alt="Second slide">
+                    </div>
+                    <div class="item">
+                        <img src="http://www.3vjia.com/Content/images/index_images/banner4.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="carousel-control left lre" href="#myCarousel" 
+                   data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right lre" href="#myCarousel" 
+                   data-slide="next">&rsaquo;</a>
+            </div> 
+        </section>
+        <!-- 预约免费量尺 -->
+       <section class="appoint">
+            <div class="appointCon">
+                <ul class="app_list">
+                    <li>
+                        <span><img src="img/yy01.png" height="68" width="68" alt="在线预约" /></span>
+                        <p><b>免费</b><br><span>在线预约</span></p>
+                    </li>
+                    <li>
+                        <span><img src="img/yy02.png"  alt="上门量房" /></span>
+                        <p><b>免费</b><br><span>上门量房</span></p>
+                    </li>
+                    <li>
+                        <span><img src="img/yy03.png" height="68" width="68" alt="3D效果" /></span>
+                        <p><b>免费</b><br><span>出3D效果</span></p>
+                    </li>
+                    <li>
+                        <span><img src="img/yy04.png" height="68" width="68" alt="上门安装" /></span>
+                        <p><b>免费</b><br><span>上门安装</span></p>
+                    </li>
+                    <li>
+                        <span><img src="img/yy05.png" height="68" width="68" alt="终身维护" /></span>
+                        <p><b>免费</b><br><span>5年保修,终身维护</span></p>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <input class="btn btn-success btn_yy" type="button" value="预约免费量尺"  data-toggle="modal" data-target="#myModal" />
+                </div>
+                <!-- 模态框（Modal） -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    &times;
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    请留下您的信息
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label for="firstname" class="col-sm-2 control-label">姓名</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="firstname" 
+                                                   placeholder="请输入姓名或称呼">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastname" class="col-sm-2 control-label">联系方式</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="lastname" 
+                                                   placeholder="请输入您的联系方式">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastname" class="col-sm-2 control-label">地址</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="lastname" 
+                                                   placeholder="请输入您的地址">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消
+                                </button>
+                                <button type="button" class="btn btn-primary">
+                                    确认
+                                </button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal -->
+                </div>
+            </div>
+        </section>
+        <!-- 核心优势 -->
+        <section class="core">
+            <h2>核心优势</h2>
+            <p>专业设计工具，为家居行业而生。</p>
+            <div class="imgs-hx">
+                <img src="img/hex.png" alt="德国进口豪迈生产线" class="img-responsive" />
+                <ul class="coreList">
+                    <li>
+                        <span class="text-center"><img src="img/hx01_ico.png"  alt="" /></span>
+                        <p class="text-center">德国进口<br>豪迈生产线</p>
+                    </li>
+                    <li>
+                        <span class="text-center"><img src="img/hx02_ico.png" alt="" /></span>
+                        <p class="text-center">VR实境体验<br>的3D云设计</p>
+                    </li>
+                    <li>
+                        <span class="text-center"><img src="img/hx03_ico.png" alt="" /></span>
+                        <p class="text-center">最先进的ERP<br>信息化管理</p>                    
+                    </li>
+                    <li>
+                        <span class="text-center"><img src="img/hx04_ico.png"  alt="" /></span>
+                        <p class="text-center">选用E0级环<br>保基材</p>                      
+                    </li>
+                    <li>
+                        <span class="text-center"><img src="img/hx05_ico.png"  alt="" /></span>
+                        <p class="text-center">专业的设计、<br>安装、售后团队</p>                    
+                    </li>
+                    <li>
+                        <span class="text-center"><img src="img/hx06_ico.png" alt="" /></span>
+                        <p class="text-center">性价比高的<br>并且多样性的产品</p>                    
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="works">
+            <h2>产品展示</h2>
+            <p>720°全景高清漫游、VR多屏互动体验</p>
+            <div class="imgs-hx">
+                <div id="dg-container" class="dg-container">
+                <div class="dg-wrapper">
+                    <div id="automatic">
+                        <div class="prev_div"></div>
+                        <a class="prev">
+                            <span class="ico1"></span>
+                            <span class="ico"></span>
+                            <span class="txt"></span>
+                        </a>
+                        <div class="next_div"></div>
+                        <a class="next">
+                            <span class="ico1"></span>
+                            <span class="ico"></span>
+                            <span class="txt"></span>
+                        </a>
+                        <div class="line"><a href=""></a></div>
+                        <ul>
+                            <li class="pos_0" rel="http://www.baidu.com">
+
+                                <img src="img/images/7.jpg" />
+                                <div class="mask">
+                                    <i class="pIcon"></i>
+                                    <p>点击进入全景浏览模式</p>
+                                </div>
+                            </li>
+                            <li class="pos_1" rel="http://www.baidu.com"><img src="img/images/1.jpg" /></li>
+                            <li class="pos_2" rel="http://www.baidu.com"><img src="img/images/2.jpg" /></li>
+                            <li class="pos_3" rel="http://www.baidu.com"><img src="img/images/3.jpg" /></li>
+                            <li class="pos_4" rel="http://www.baidu.com"><img src="img/images/4.jpg" /></li>
+                            <li class="pos_5" rel="http://www.baidu.com"><img src="img/images/5.jpg" /></li>
+                            <li class="pos_6" rel="http://www.baidu.com"><img src="img/images/6.jpg" /></li>
+                            <li class="pos_4" rel="http://www.baidu.com"><img src="img/images/4.jpg" /></li>
+                            <li class="pos_5" rel="http://www.baidu.com"><img src="img/images/5.jpg" /></li>
+                            <li class="pos_6" rel="http://www.baidu.com"><img src="img/images/6.jpg" /></li>
+                        </ul>
+                    </div>
+                </div>
+                <nav>   
+                    <span class="dg-prev">&lt;</span>
+                    <span class="dg-next">&gt;</span>
+                </nav>
+            </div>
+            <script type="text/javascript" src="js/showPro1.js"></script>
+            <script type="text/javascript">
+            $(function() {
+                $('#dg-container').gallery({
+                    autoplay    :   false
+                });
+            });
+            </script>
+            </div>
+        </section>
+        <!-- 定制解决方案中心-->
+        <section class="sovle">
+            <h2>定制解决方案中心</h2>
+            <p>专业的家具行业经验，完美帮您解决问题</p>
+            <div class="sovleCon">
+                <ul class="sovleNav">
+                    <li class="current">客厅</li>
+                    <li>厨房</li>
+                    <li>卧室</li>
+                    <li>卫生间</li>
+                    <li>玄关</li>
+                    <li>餐厅</li>
+                    <li>阳台</li>
+                    <li>儿童房</li>
+                    <li>衣帽间</li>
+                    <li>书房</li>
+                </ul>
+                <div class="soveListcon">
+                    <ol class="soveListconL">
+                        <li><img src="http://www.fafatong.cn/Public/Uploads/product/thumb/2016-06-02/574fa3d7e7cc4.jpg" width="200" alt="" /></li>
+                        <li><img src="http://www.fafatong.cn/Public/Uploads/product/thumb/2016-06-02/574fa3d7e7cc4.jpg" width="200" alt="" /></li>
+                        <li><img src="http://www.fafatong.cn/Public/Uploads/product/thumb/2016-06-02/574fa3d7e7cc4.jpg" width="200" alt="" /></li>
+                    </ol>
+                    <div class="imgHxt">
+                        <img src="http://www.fafatong.cn/Public/Uploads/product/source/2016-06-02/574fa3d7e7cc4.jpg" width="680" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 成功案例 -->
+        <section class="case">
+            <h2>成功案例</h2>
+            <p>客户的满意，是我们最大的动力</p>
+            <div class="caseCon">
+                <ul>
+                    <li><img src="img/case1.jpg" height="220" width="329" alt="" /></li>
+                    <li><p><b>盘古大洋套房精装</b><br>广州天河天源路4545</p></li>
+                    <li><img src="img/case2.jpg" height="220" width="329" alt="" /></li>
+                    <li><p><b>欧式大洋套房精装</b><br>广州天河天源路4545</p></li>
+                    <li><p><b>现代大洋套房精装</b><br>广州天河天源路4545</p></li>
+                    <li><img src="img/case3.jpg" height="220" width="329" alt="" /></li>
+                    <li><p><b>复古大洋套房精装</b><br>广州天河天源路4545</p></li>
+                    <li><img src="img/case4.jpg" height="220" width="329" alt="" /></li>
+                </ul>
+            </div>
+        </section>
+        <!-- footer底部信息 -->
+        <footer class="footer"></footer>
+        <!-- 中间飞起来板块 -->
+        <div class="fixcenter">
+            <ul>
+                <li><a target="_blank" href="tencent://message/?uin=977506457"></a></li>
+                <li style="background-position:0 -78px;"></li>
+                <li style="background-position:0 -156px;"></li>
+                <li style="background-position:0 -234px;"></li>
+            </ul>
+        </div>
+        <!-- 底部飞起来的板块 -->
+        <div class="fixfoot">
+             <div class="fixfootCon">
+                 <h3 class="JMtitle"><img src="img/fexdbjm.png" height="66" width="172" alt="" /></h3>
+                 <div class="formJM">
+                     <form role="form">
+                        <div class="form-group">
+                            <select class="form-control" name="sele">
+                                <option value="省/市">省/市</option>
+                                <option value="广东">广东</option>
+                                <option value="北京">北京</option>
+                                <option value="上海">上海</option>
+                            </select>  
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" name="sele">
+                                <option value="市/地区">市/地区</option>
+                                <option value="广州">广州</option>
+                                <option value="深圳">深圳</option>
+                                <option value="茂名">茂名</option>
+                                <option value="梅州">梅州</option>
+                            </select>  
+                        </div>
+                        <div class="form-group" style="margin-left:50px;">
+                                <input type="text" class="form-control" id="" placeholder="请输入名字">
+                        </div>
+                        <div class="form-group">
+                                <input type="text" class="form-control" id="" placeholder="请输入名字">
+                        </div>
+                        <div class="form-group" style="margin-left:50px;">
+                                <input type="button" class="form-control btn btn-success" value="加盟" id="" />
+                        </div>
+                    </form>
+                    <span class="sp01">X</span>
+                 </div>
+             </div>
+        </div>  
+    </body>
+    <script type="text/javascript">
+        $(".header").load('common/header1.html');
+        $(".footer").load('common/footer1.html');   
+        $(".sp01").click(function(event) {
+            $(this).parent().parent().parent().hide();
+        }); 
+    </script>
+</html>
